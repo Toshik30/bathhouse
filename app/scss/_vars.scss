@@ -1,0 +1,17 @@
+$primary-color: #36aeea;
+$big-size:22px;
+$white70: rgba(255,255,255,.7);
+$primary-black: rgba(0,0,0,.94);
+
+%flex-center {
+	    display: flex;
+    	justify-content: center;
+	    align-items: center;
+}
+
+%flex-between {
+	    display: flex;
+    	justify-content: space-between;
+	    align-items: center;
+}
+
