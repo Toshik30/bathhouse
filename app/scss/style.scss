@@ -5,8 +5,15 @@
 * {
  box-sizing:border-box;
 }
+
+
 @import "media";
 
 
+.carousel-fade {
+	 transition: transform 2s ease, opacity .5s ease-out;
+}
 
+.carousel-item {
 
+}
