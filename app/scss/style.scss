@@ -6,7 +6,7 @@
  box-sizing:border-box;
 }
 body {
-	font-family: "RussoOne-Regular";
+	font-family: "RussoOne-Regular",sans-serif;
 }
 section {
 	padding-bottom: 40px;
@@ -35,9 +35,9 @@ header {
 			height: 60px;
 		}
 
-		a{
+		a {
 			color: white;
-			font-weight: 600;
+			font-weight: 400;
 
 			&:hover {
 				color: orangered; 
@@ -58,8 +58,8 @@ header {
 	.titul {
 		position: absolute;
 		z-index: 2;
-		top:300px;
-		left: 45%;
+		top:26%;
+		left: 42%;
 		color: white;
 		max-width: 500px;
 		padding-left: 25px;
@@ -98,14 +98,15 @@ header {
 	}
 }
 .info {
-	background:#ff450029;
-
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,163,60,1) 100%);
 	h2 {
 		padding-top: 40px;
 	}
 	.about-us {
 		text-align: center;
 		padding-top: 40px;
+
+		
 		div {
 			height: 200px;
 			width: 70%;
