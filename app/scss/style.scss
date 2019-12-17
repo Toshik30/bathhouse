@@ -5,15 +5,154 @@
 * {
  box-sizing:border-box;
 }
+body {
+	font-family: "RussoOne-Regular";
+}
+section {
+	padding-bottom: 40px;
+}
+h2 {
+	text-align: center;
+}
+.carousel-inner {
+	height: 100vh;
 
+}
 
+header {
+	background:#00000082;
+	padding: 10px 0;
+	border-bottom: 1px solid orangered;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	
+
+	nav {
+
+		img {
+			width: 80px;
+			height: 60px;
+		}
+
+		a{
+			color: white;
+			font-weight: 600;
+
+			&:hover {
+				color: orangered; 
+			}
+		}
+		p {
+			font-family: "Lobster-Regular";
+			color: white;
+			font-size: 34px;
+			font-weight: 600;
+		}
+
+	}
+}
+.main {
+	position: relative;
+
+	.titul {
+		position: absolute;
+		z-index: 2;
+		top:300px;
+		left: 45%;
+		color: white;
+		max-width: 500px;
+		padding-left: 25px;
+	    border-top: 10px solid rgba(259,126,0,1.67);
+	    border-left:  10px outset rgba(259,126,0,1.67);
+
+		span {
+			border-left: 30px;
+		}
+	}
+}
+.price {
+	span {
+		
+		font-size: 18px;
+	}
+
+	.price-list {
+		padding-top: 30px;
+		div {
+			height: 250px;
+			width: 250px;
+			box-shadow: 1px 1px 10px 1px #000;
+			padding: 80px 25px ;
+			border-radius: 10px;
+
+			&:hover {
+				box-shadow: 0px 0px 25px 1px orangered;
+			}
+
+			&:hover span {
+				color: orangered;
+
+			}
+		}
+	}
+}
+.info {
+	background:#ff450029;
+
+	h2 {
+		padding-top: 40px;
+	}
+	.about-us {
+		text-align: center;
+		padding-top: 40px;
+		div {
+			height: 200px;
+			width: 70%;
+		}
+		.favor {
+			background: #456220;
+      
+     		 animation: left 2s linear;
+		}
+		.originality {
+			background:#657734;
+
+      		animation: right 2s linear;
+		}
+		.vat {
+			background:#123409;
+
+     		animation: left 2s linear;
+		}
+		.why-us {
+			background:#064278;
+
+      		animation: right 2s linear;
+		}
+		.rules {
+			background:#123034;
+
+      		animation: left 2s linear;
+		}
+		@keyframes left {
+		  0% {
+		    margin-left:100%;
+		  }
+		  100% {
+		    margin-left:0%;
+		  }
+		}
+		@keyframes right {
+		  100% {
+		    margin-left:100%;
+		  }
+		  0% {
+		    margin-left:0%;
+		  }
+		}
+	}
+}
 @import "media";
 
 
-.carousel-fade {
-	 transition: transform 2s ease, opacity .5s ease-out;
-}
-
-.carousel-item {
-
-}
