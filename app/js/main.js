@@ -7,3 +7,9 @@ function isScrolledIntoView(elem) {
 
   return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+$(window).on('scroll', function() {
+  const elem = $("#first-animated");
+    if (isScrolledIntoView(elem)) {
+      elem.addClass("about-us");
+    }
+});

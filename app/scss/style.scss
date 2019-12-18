@@ -82,12 +82,15 @@ header {
 		div {
 			height: 250px;
 			width: 250px;
-			box-shadow: 1px 1px 10px 1px #000;
+			box-shadow: 1px 1px 5px 1px #000;
 			padding: 80px 25px ;
 			border-radius: 10px;
+			animation: shine 2s linear;
+
 
 			&:hover {
 				box-shadow: 0px 0px 25px 1px orangered;
+				transition: 0.2s linear;
 			}
 
 			&:hover span {
@@ -101,56 +104,42 @@ header {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,163,60,1) 100%);
 	h2 {
 		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 	.about-us {
-		text-align: center;
-		padding-top: 40px;
-
+			transition: all 1.5s linear;
 		
 		div {
-			height: 200px;
-			width: 70%;
+			padding: 50px 20px;
+			text-align: center;
+			height: 300px;
+			width: 800px;
+			margin-bottom: 20px;
+			border-radius: 20px;
+			background: linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(252,163,60,.8) 100%);
 		}
 		.favor {
-			background: #456220;
-      
-     		 animation: left 2s linear;
+			transition: all 1.7s linear 1s;
+			transform: translateX(800px);
 		}
 		.originality {
-			background:#657734;
-
-      		animation: right 2s linear;
+			transition: all 1.7s reverse 1s;
+			transform: translateX(200px);
+			
 		}
 		.vat {
-			background:#123409;
+			transition: all 1.9s linear 1s;
+			transform: translateX(800px);
 
-     		animation: left 2s linear;
+
 		}
 		.why-us {
-			background:#064278;
-
-      		animation: right 2s linear;
+			transition: all 1.9s linear 1s;
+			transform: translateX(300px);
 		}
 		.rules {
-			background:#123034;
-
-      		animation: left 2s linear;
-		}
-		@keyframes left {
-		  0% {
-		    margin-left:100%;
-		  }
-		  100% {
-		    margin-left:0%;
-		  }
-		}
-		@keyframes right {
-		  100% {
-		    margin-left:100%;
-		  }
-		  0% {
-		    margin-left:0%;
-		  }
+			transition: all 2s linear 1s;
+			transform: translateX(800px);
 		}
 	}
 }
