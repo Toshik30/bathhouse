@@ -100,6 +100,28 @@ header {
 		}
 	}
 }
+
+.gallery {
+	img {
+		height: 200px;
+		width: 350px;
+		margin: 10px;
+		transition: all 1s ease-out;
+
+		&:hover {
+			transform: scale(1.1);
+				
+		}
+	}
+	.modal {
+		.image {
+			img {
+				height: 600px;
+				width: 900px;
+		  }
+		}
+	}
+}
 .info {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(252,163,60,1) 100%);
 	h2 {
@@ -107,9 +129,12 @@ header {
 		padding-bottom: 40px;
 	}
 	.about-us {
-			transition: all 1.5s linear;
+			display: flex;
+			flex-direction: column;
+			transition: all 1.5s linear 1.5s;
 		
 		div {
+
 			padding: 50px 20px;
 			text-align: center;
 			height: 300px;
@@ -120,26 +145,24 @@ header {
 		}
 		.favor {
 			transition: all 1.7s linear 1s;
-			transform: translateX(800px);
+			transform: translateX(650px);
 		}
 		.originality {
-			transition: all 1.7s reverse 1s;
-			transform: translateX(200px);
-			
+			transition: all 1.7s linear 1s;
+			transform: translateX(-650px);
+
 		}
 		.vat {
 			transition: all 1.9s linear 1s;
-			transform: translateX(800px);
-
-
+			transform: translateX(650px);
 		}
 		.why-us {
 			transition: all 1.9s linear 1s;
-			transform: translateX(300px);
+			transform: translateX(-650px);
 		}
 		.rules {
 			transition: all 2s linear 1s;
-			transform: translateX(800px);
+			transform: translateX(650px);
 		}
 	}
 }
