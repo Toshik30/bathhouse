@@ -11,7 +11,7 @@ body {
 section {
 	padding-bottom: 40px;
 }
-h2 {
+h2,h3 {
 	text-align: center;
 }
 .carousel-inner {
@@ -20,7 +20,7 @@ h2 {
 }
 
 header {
-	background:#00000082;
+	background:#000000d9;
 	padding: 10px 0;
 	border-bottom: 1px solid orangered;
 	position: fixed;
@@ -102,6 +102,7 @@ header {
 }
 
 .gallery {
+	cursor: pointer;
 	img {
 		height: 200px;
 		width: 350px;
@@ -116,8 +117,8 @@ header {
 	.modal {
 		.image {
 			img {
-				height: 600px;
-				width: 900px;
+				height: 500px;
+				width: 750px;
 		  }
 		}
 	}
@@ -131,41 +132,70 @@ header {
 	.about-us {
 			display: flex;
 			flex-direction: column;
-			transition: all 1.5s linear 1.5s;
+			transition: all 1.5s linear 0s;
 		
 		div {
 
-			padding: 50px 20px;
-			text-align: center;
-			height: 300px;
+			padding: 20px;
 			width: 800px;
 			margin-bottom: 20px;
 			border-radius: 20px;
 			background: linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(252,163,60,.8) 100%);
 		}
 		.favor {
-			transition: all 1.7s linear 1s;
-			transform: translateX(650px);
+			transition: all 1.5s linear ;
+			transform: translateX(500px);
 		}
 		.originality {
-			transition: all 1.7s linear 1s;
-			transform: translateX(-650px);
+			transition: all 1.5s linear ;
+			transform: translateX(-500px);
 
 		}
 		.vat {
-			transition: all 1.9s linear 1s;
-			transform: translateX(650px);
+			transition: all 1.5s linear ;
+			transform: translateX(500px);
 		}
 		.why-us {
-			transition: all 1.9s linear 1s;
-			transform: translateX(-650px);
+			transition: all 1.5s linear ;
+			transform: translateX(-500px);
 		}
 		.rules {
-			transition: all 2s linear 1s;
-			transform: translateX(650px);
+			transition: all 1.5s linear ;
+			transform: translateX(500px);
 		}
 	}
 }
+.contacts {
+	
+    background:  linear-gradient(180deg, rgba(252,163,60,1) 0%, rgba(254,205,149,1) 21%, rgba(255,255,255,1) 100%);
+
+    .map {
+    	border-radius: 20px;
+    	padding-top: 50px ;
+    }
+}
+
+footer {
+	background:#000000d9;
+	margin-top: 50px;
+	padding: 30px 0;
+	border-top: 1px solid orangered;
+	
+
+
+	nav {
+
+		a {
+			color: white;
+			font-weight: 400;
+
+			&:hover {
+				color: orangered; 
+			}
+		}
+	}
+}
+
 @import "media";
 
 
