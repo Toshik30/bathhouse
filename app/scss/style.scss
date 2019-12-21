@@ -132,7 +132,6 @@ header {
 	.about-us {
 			display: flex;
 			flex-direction: column;
-			transition: all 1.5s linear 0s;
 		
 		div {
 
@@ -141,27 +140,6 @@ header {
 			margin-bottom: 20px;
 			border-radius: 20px;
 			background: linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(252,163,60,.8) 100%);
-		}
-		.favor {
-			transition: all 1.5s linear ;
-			transform: translateX(500px);
-		}
-		.originality {
-			transition: all 1.5s linear ;
-			transform: translateX(-500px);
-
-		}
-		.vat {
-			transition: all 1.5s linear ;
-			transform: translateX(500px);
-		}
-		.why-us {
-			transition: all 1.5s linear ;
-			transform: translateX(-500px);
-		}
-		.rules {
-			transition: all 1.5s linear ;
-			transform: translateX(500px);
 		}
 	}
 }
