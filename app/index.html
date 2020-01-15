@@ -10,10 +10,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -39,9 +35,11 @@
       </div>
     </header>
     <section class="main ">
-      <div class="titul">
-        <h1> Баня "В Кругу Друзей"</h1>
-        <span>Банный комплекс by Anatolii приглашает ценителей мокрого пара, здесь можно прекрасно отдохнуть и расслабиться после тяжелых трудовых будней с пользой для здоровья.</span>
+      <div class="main-container d-flex justify-content-center align-items-center">
+        <div class="heading">
+          <h1> Баня "В Кругу Друзей"</h1>
+          <span>Банный комплекс by Anatolii приглашает ценителей мокрого пара, здесь можно прекрасно отдохнуть и расслабиться после тяжелых трудовых будней с пользой для здоровья.</span>
+        </div>
       </div>
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
@@ -88,35 +86,34 @@
         </div>
       </div>
     </section>
-    <section id="more" class="gallery">
+    <section id="more" class="gallery" data-toggle="modal" data-target="#exampleModalLong">
       <h2>Gallery</h2>
       <div class="container pt-4 d-flex  justify-content-between flex-wrap">
-        <img src="https://banyaclub.com.ua/wp-content/uploads/2019/02/gromadskaya-1.jpg" data-toggle="modal" data-target="#exampleModalLong">
-        <img  src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/main/aa4b558a3c32a0002ba0c40e5e58f1d1.jpg" data-toggle="modal" data-target="#exampleModalLong" >
-        <img src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/preview/53b49c661f64824fe43668d6f805e0e4.jpg" data-toggle="modal" data-target="#exampleModalLong" >
-        <img  src="https://kolobok.ua/i/80/95/77/809577/2020029577fb9c445ee0ad5b9aa512b2-quality_70Xresize_crop_1Xallow_enlarge_0Xw_698Xh_465.jpg"data-toggle="modal" data-target="#exampleModalLong">
-        <img  src="http://www.krestianin.ru/sites/default/files/title_image/2016-08/8aptechka_21.jpg"data-toggle="modal" data-target="#exampleModalLong" >
-        <img  src="https://skalice.ru/800/600/http/postroiv.ru/wp-content/uploads/2016/04/62_b.jpg"data-toggle="modal" data-target="#exampleModalLong" >
-        <img  src="https://www.gudauri.info/uploads/files/accommodation/tsarbani/tsar2_0030.jpg"data-toggle="modal" data-target="#exampleModalLong" >
-        <img  src="https://www.teplodar.in.ua/upload/iblock/c69/14_maxi_iki_plus.jpg"data-toggle="modal" data-target="#exampleModalLong" >
-        <img src="http://saunaclub.lv/wp-content/uploads/2019/02/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%B0%D0%BD%D1%8F-1-1-1.jpg"data-toggle="modal" data-target="#exampleModalLong">
+        <img class="gallery-image"  src="https://banyaclub.com.ua/wp-content/uploads/2019/02/gromadskaya-1.jpg" >
+        <img class="gallery-image"  src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/main/aa4b558a3c32a0002ba0c40e5e58f1d1.jpg"  >
+        <img class="gallery-image" src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/preview/53b49c661f64824fe43668d6f805e0e4.jpg" >
+        <img class="gallery-image"  src="https://kolobok.ua/i/80/95/77/809577/2020029577fb9c445ee0ad5b9aa512b2-quality_70Xresize_crop_1Xallow_enlarge_0Xw_698Xh_465.jpg">
+        <img class="gallery-image"  src="http://www.krestianin.ru/sites/default/files/title_image/2016-08/8aptechka_21.jpg">
+        <img class="gallery-image"  src="https://skalice.ru/800/600/http/postroiv.ru/wp-content/uploads/2016/04/62_b.jpg">
+        <img class="gallery-image"  src="https://www.gudauri.info/uploads/files/accommodation/tsarbani/tsar2_0030.jpg">
+        <img class="gallery-image"  src="https://www.teplodar.in.ua/upload/iblock/c69/14_maxi_iki_plus.jpg">
+        <img class="gallery-image" src="http://saunaclub.lv/wp-content/uploads/2019/02/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%B0%D0%BD%D1%8F-1-1-1.jpg">
         <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-              <div class="image"><a href="#"><img src="https://banyaclub.com.ua/wp-content/uploads/2019/02/gromadskaya-1.jpg" ></a></div>
-              <div class="image"><a href="#"><img  src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/main/aa4b558a3c32a0002ba0c40e5e58f1d1.jpg" ></a></div>
-              <div class="image" ><a href="#"><img src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/preview/53b49c661f64824fe43668d6f805e0e4.jpg" ></a></div>
-              <div class="image"><a href="#"><img  src="https://kolobok.ua/i/80/95/77/809577/2020029577fb9c445ee0ad5b9aa512b2-quality_70Xresize_crop_1Xallow_enlarge_0Xw_698Xh_465.jpg"></a></div>
-              <div class="image"><a href="#"><img  src="http://www.krestianin.ru/sites/default/files/title_image/2016-08/8aptechka_21.jpg" ></a></div>
-              <div class="image" ><a href="#"><img  src="https://skalice.ru/800/600/http/postroiv.ru/wp-content/uploads/2016/04/62_b.jpg" ></a></div>
-              <div class="image"><a href="#"><img  src="https://www.gudauri.info/uploads/files/accommodation/tsarbani/tsar2_0030.jpg" ></a></div>
-              <div class="image"><a href="#"><img  src="https://www.teplodar.in.ua/upload/iblock/c69/14_maxi_iki_plus.jpg" ></a></div>
-              <div class="image" ><a href="#"><img src="http://saunaclub.lv/wp-content/uploads/2019/02/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%B0%D0%BD%D1%8F-1-1-1.jpg"></a></div>
+              <img src="https://banyaclub.com.ua/wp-content/uploads/2019/02/gromadskaya-1.jpg" >
+              <img  src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/main/aa4b558a3c32a0002ba0c40e5e58f1d1.jpg" >
+              <img src="https://i.laznya.kiev.ua/site/photos/sauny/252/2_laznya.kiev.ua/rooms/528/preview/53b49c661f64824fe43668d6f805e0e4.jpg" >
+              <img  src="https://kolobok.ua/i/80/95/77/809577/2020029577fb9c445ee0ad5b9aa512b2-quality_70Xresize_crop_1Xallow_enlarge_0Xw_698Xh_465.jpg">
+              <img  src="http://www.krestianin.ru/sites/default/files/title_image/2016-08/8aptechka_21.jpg" >
+              <img  src="https://skalice.ru/800/600/http/postroiv.ru/wp-content/uploads/2016/04/62_b.jpg" >
+              <img  src="https://www.gudauri.info/uploads/files/accommodation/tsarbani/tsar2_0030.jpg" >
+              <img  src="https://www.teplodar.in.ua/upload/iblock/c69/14_maxi_iki_plus.jpg" >
+              <img src="http://saunaclub.lv/wp-content/uploads/2019/02/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%B0%D0%BD%D1%8F-1-1-1.jpg">
             </div>
           </div>
         </div>
       </div>
-      
     </section>
     <section id="about" class="info">
       <div class="container">
@@ -128,25 +125,25 @@
           </p>
         </div>
         <div class="originality ml-auto wow fadeInLeft">
-          <p>Баня  является одним из самых эффективных средств для очищения души и тела:
-            <br> • обладает прекрасным расслабляющим эффектом, снимая нервное напряжение;
-            <br> • восстанавливает физические силы организма;
-            <br> • увеличивает эритроциты в крови;
-            <br> • помогает при лечении простудных заболеваний, особенно при использовании различных трав и масел;
-            <br> • при систематическом посещении сауны повышается иммунная система человека;
-            <br> • благодаря смене температур в сауне, происходит закаливание организма;
-            
+          <ul>Баня  является одним из самых эффективных средств для очищения души и тела:
+            <li>  обладает прекрасным расслабляющим эффектом, снимая нервное напряжение</li>
+            <li> восстанавливает физические силы организма</li>
+            <li> увеличивает эритроциты в крови</li>
+            <li> помогает при лечении простудных заболеваний, особенно при использовании различных трав и масел</li>
+            <li>  при систематическом посещении сауны повышается иммунная система человека</li>
+            <li>  благодаря смене температур в сауне, происходит закаливание организма</li>
+            </ul>
           </div>
           <div class="vat wow fadeInRight">"Пан-Чан"
             <p>Мы первые, кто построил в Славутиче общественную баню с закарпатским чаном, с соблюдением всех правил и технологических процессов, разработанных и проверенных многовековой эксплуатацией «законодателей моды». Этот вид банной процедуры, зародился в ХVII веке в закарпатском посёлке Лумшоры. Именно у них мы переняли все лучшие традиции этого замечательного способа парения.Доказано наукой, что баня чан – это изумительное средство для лечения заболеваний суставов, а также для восстановления организма после травм и переломов. Многие спортсмены после изнурительных тренировок, полностью снимают усталость, и восстанавливают силы. </p>
           </div>
           <div class="why-us ml-auto wow fadeInLeft">
-            <p>Кроме того, банный чан на дровах вам поможет:
-              <br>• Очистить кровь и вывести токсины из организма.
+            <p>Кроме того, банный чан на дровах вам поможет:</p>
+              <p> Очистить кровь и вывести токсины из организма.
               Вернуть молодость и жизненную энергию.Сбросить лишний вес и подтянуть кожные покровы.Улучшить работу сердечно сосудистой системы и стабилизировать давление.Нормализовать работу щитовидной железы и улучшить обмен веществ, справиться с простудой и повысить иммунитет организма.Нормализовать опорно-двигательный аппарат. Укрепить нервную систему, и как следствие – избавиться от стрессов, тревоги, бессонницы. Обеспечить общеукрепляющее и болеутоляющее действие.
             </p>
           </div>
-          <div class="rules wow fadeInRight">ПРавила
+          <div class="rules wow fadeInRight">Правила
             <p>
               кровь и вывести токсины из организма.
               Вернуть молодость и жизненную энергию.Сбросить лишний вес и подтянуть кожные покровы.Улучшить работу сердечно сосудистой системы и стабилизировать давление.Нормализовать работу щитовидной железы и улучшить обмен веществ, справиться с простудой и повысить иммунитет организма.Нормализовать опорно-двигательный аппарат. Укрепить нервную систему, и как следст
@@ -195,6 +192,10 @@
           </nav>
         </div>
       </footer>
+      <script src="js/wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script>
       function slowScroll (id) {

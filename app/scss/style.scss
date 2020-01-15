@@ -52,19 +52,22 @@ header {
 .main {
 	position: relative;
 
-	.titul {
+	&-container {
+	
 		position: absolute;
 		z-index: 2;
-		top:26%;
-		left: 42%;
+		top:0;
+		left: 0;
 		color: white;
-		max-width: 500px;
-		padding-left: 25px;
-	    border-top: 10px solid rgba(259,126,0,1.67);
-	    border-left:  10px outset rgba(259,126,0,1.67);
+		width: 100%;
+		height: 100%;
 
-		span {
-			border-left: 30px;
+		.heading {
+			transform: translateX(150px);
+			padding-left: 25px;
+		    border-top: 10px solid rgba(259,126,0,1.67);
+		    border-left:  10px outset rgba(259,126,0,1.67);
+		    max-width: 500px;
 		}
 	}
 }
@@ -100,24 +103,22 @@ header {
 
 .gallery {
 	cursor: pointer;
-	img {
+	&-image {
 		height: 200px;
 		width: 350px;
 		margin: 10px;
 		transition: all 1s ease-out;
 
 		&:hover {
-			transform: scale(1.1);
-				
+			transform: scale(1.1);		
 		}
 	}
 	.modal {
-		.image {
-			img {
-				height: 500px;
-				width: 750px;
-		    }
-		}
+		 
+		img {
+			height: 500px;
+			width: 100%;
+	    }
 	}
 }
 .info {
@@ -170,5 +171,7 @@ footer {
 }
 
 @import "media";
-
-
+//carousel control style;
+.carousel-control-prev,.carousel-control-next {
+	z-index: 100; 
+}
